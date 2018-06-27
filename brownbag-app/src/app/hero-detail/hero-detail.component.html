@@ -1,3 +1,14 @@
-<p>
-  hero-detail works!
-</p>
+<div *ngIf="hero">
+
+  <h2>{{ hero.name | uppercase }} Details</h2>
+  <div><span>Id: </span>{{hero.id}}</div>
+  <div>
+    <label>Name: {{hero.name}}</label>
+  </div>
+  <div>
+    <label>Power: {{hero.power}}</label>
+  </div>
+  <div>
+    <label>Cape color: {{hero.capeColor}}</label>
+  </div>
+</div>
